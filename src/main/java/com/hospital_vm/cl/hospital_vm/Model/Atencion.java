@@ -25,6 +25,9 @@ public class Atencion {
     @Column(nullable = false)
     private Date fecha;
 
-   
+   @ManyToOne
+    @JoinColumn(name = "paciente_id", nullable = false)
+     private Paciente paciente;
+    
 
 }
