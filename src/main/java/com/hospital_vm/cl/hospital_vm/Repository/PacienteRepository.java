@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.data.jpa.repository.Query;
 //import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+
 import com.hospital_vm.cl.hospital_vm.Model.Paciente;
 import java.util.List;
 
@@ -20,5 +22,5 @@ public interface PacienteRepository extends JpaRepository<Paciente , Long>{
     // encuentra paciente por normbre y apellido
     List<Paciente> findByNombreAndApellido(String nombre, String apellido);
 
-    
+   
 }
