@@ -28,6 +28,6 @@ public class Atencion {
    @ManyToOne
     @JoinColumn(name = "paciente_id", nullable = false)
      private Paciente paciente;
-    
+
 
 }
